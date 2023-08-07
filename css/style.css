@@ -33,13 +33,13 @@ a:hover {
     background: url('../images/banner1.jpg') no-repeat 0px 0px;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
     background-attachment: fixed;
 }
 .banner1{
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
     background-attachment: fixed;
 }
 
