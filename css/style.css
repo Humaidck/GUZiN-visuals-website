@@ -79,7 +79,7 @@ a:hover {
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 10px;
     letter-spacing: 2px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
