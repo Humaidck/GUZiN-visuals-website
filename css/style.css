@@ -33,13 +33,13 @@ a:hover {
     background: url('../images/banner1.jpg') no-repeat 0px 0px;
     background-size: cover;
     background-position: center;
-    height: 75vh;
+    height: 70vh;
     background-attachment: fixed;
 }
 .banner1{
     background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
-    height: 75vh;
+    height: 70vh;
     background-attachment: fixed;
 }
 
@@ -47,7 +47,7 @@ a:hover {
 
 #message p {
     margin: 1em 0;
-    font-size: 21px;
+    font-size: 10px;
     letter-spacing: 1px;
     color: #ffffff;
     text-transform: uppercase;
@@ -86,7 +86,199 @@ a:hover {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
     -moz-transition: 0.5s all;
+    padding: 2px;
 }
+
+
+/*--  interior-designs --*/
+
+.w3ls-interior-design-grids:nth-child(2) {
+    padding: 15px 0;
+}
+
+/*-- effect --*/
+
+.w3ls-interior-design-grid-left {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+
+.w3ls-interior-design-grid-left figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    min-width: 100%;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+}
+
+.w3ls-interior-design-grid-left figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.w3ls-interior-design-grid-left figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.w3ls-interior-design-grid-left figure figcaption::before,
+.w3ls-interior-design-grid-left figure figcaption::after {
+    pointer-events: none;
+}
+
+.w3ls-interior-design-grid-left figure figcaption,
+.w3ls-interior-design-grid-left figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/***** Lexi *****/
+
+/*---------------*/
+
+figure.effect-lexi {
+    background: -webkit-linear-gradient(-45deg, #000 0%, #000000 100%);
+    background: linear-gradient(-45deg, #000000 0%, #f5d10d 100%);
+}
+
+figure.effect-lexi img {
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px, 10px, 0);
+    transform: translate3d(10px, 10px, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect-lexi figcaption::before,
+figure.effect-lexi p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-lexi figcaption::before {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 285px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 900px rgba(255, 255, 255, 0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+    transform: scale3d(0.5, 0.5, 1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+figure.effect-lexi:hover img {
+    opacity: 0.6;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-lexi h3 {
+    text-align: left;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(5px, 5px, 0);
+    transform: translate3d(5px, 5px, 0);
+    font-size: 25px;
+    color: #fff;
+}
+
+figure.effect-lexi h3 span {
+    color: #f5d10d;
+}
+
+figure.effect-lexi p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em 1em 0em;
+    width: 140px;
+    text-align: right;
+    opacity: 0;
+    -webkit-transform: translate3d(20px, 20px, 0);
+    transform: translate3d(20px, 20px, 0);
+    font-size: .8em;
+    line-height: 1.8em;
+}
+
+figure.effect-lexi:hover figcaption::before {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+figure.effect-lexi:hover h3,
+figure.effect-lexi:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/*-- //effect --*/
+
+.w3ls-interior-design-grid-right h3 {
+    font-size: 25px;
+    color: #f6e71d;
+    margin-top: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.w3ls-interior-design-grid-right h3 span {
+    color: #ffffff;
+}
+
+.banner-bottom-info {
+    padding-top: 3em;
+    border-top: 1px solid #c0c0c0;
+}
+
+.w3ls-interior-design-grid-right p {
+    margin: 20px 0 0;
+    color: #fed053;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    line-height: 2.2;
+}
+
+.w3ls-interior-design-grid-right p span {
+    display: block;
+    margin: 20px 0 0;
+}
+
 
 /* gallery */
 
@@ -585,3 +777,24 @@ footer .w3-social a {
 }
 
 /*- Responsive -*/
+
+hr {
+    height: 4px;
+    margin-left: 15px;
+    margin-bottom:-3px;
+  }
+
+.hr-warning{
+    background-image: -webkit-linear-gradient(left, #f6e71d, rgba(0,0,0,0));
+  }
+  .hr{
+    background-image: -webkit-linear-gradient(left, #f6e81d77, #f6e81d6b);
+    height: 0.41px;
+
+  }
+
+.ul{
+    color: #ffffff;
+    padding-top: 15px;
+    padding-left: 5%;
+}
